@@ -1,0 +1,35 @@
+{% extends 'mainapp/base.html' %}
+
+{% load static %}
+
+{% block css %}
+    {{ block.super }}
+{% endblock %}
+
+{% block js %}
+    {{ block.super }}
+{% endblock %}
+
+{% block container %}
+
+    {% include 'mainapp/inc/inc__main_menu.html' %}
+
+    <div class="location">
+        {% for item in locations %}
+            <div class="aaa">
+                <h4>{{ item.city }}</h4>
+
+                <h5>Телефон</h5>
+                <p>{{ item.phone }}</p>
+
+                <h5>Email</h5>
+                <p>{{ item.email }}</p>
+
+                <h5>Адрес</h5>
+                <p>{{ item.address }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+
+{% endblock %}

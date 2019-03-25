@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Магазин товаров для Bushcraft / {{ page_title|default:"забыл оформить page_title"|title }}
+    </title>
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'styles/style.css' %}">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Sniglet" rel="stylesheet">
+    {% endblock %}
+    {% block js %}
+    {% endblock %}
+
+</head>
+
+<body>
+
+
+    <div class="container">
+        {% block container %}
+
+
+
+    {% endblock %}
+    </div>
+
+
+   <footer>
+       <hr>
+        <p>Все права защищены&copy;</p>
+   </footer>
+
+</body>
+</html>

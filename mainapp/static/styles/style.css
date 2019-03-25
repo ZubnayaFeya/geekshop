@@ -1,0 +1,26 @@
+body{
+    background-color: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    font-family: 'Sniglet', cursive;
+    font-weight: 800;
+    font-size: 20px;
+    background-color: burlywood;
+}
+
+.menu{
+    text-align: center;
+    list-style-type: none;
+}
+
+.menu-link{
+    color: #6B8E23;
+    text-decoration: none;
+}
+
+.active{
+    text-decoration: underline;
+    color: green;
+}

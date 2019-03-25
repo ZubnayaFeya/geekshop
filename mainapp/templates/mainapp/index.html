@@ -1,0 +1,20 @@
+{% extends 'mainapp/base.html' %}
+
+{% block css %}
+    {{ block.super }}
+{% endblock %}
+
+{% block js %}
+    {{ block.super }}
+{% endblock %}
+
+{% block container %}
+
+    {% include 'mainapp/inc/inc__main_menu.html' %}
+
+    <main>
+        <h1>Магазин товаров для bushcraft</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In eum sit repellendus! Iste doloribus facilis laudantium nobis veniam ex eum et praesentium alias, quo harum, provident quis voluptatem illum dolore.</p>
+    </main>
+
+{% endblock %}

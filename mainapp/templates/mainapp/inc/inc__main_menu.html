@@ -1,0 +1,28 @@
+{% load static %}
+
+<header>
+    <a href="{% url 'index' %}" class="menu-logo">
+        <img src="{% static '/img/logo.jpg' %}" alt="logo" width="60px">
+    </a>
+    <div class="main_menu">
+        <ul class="menu">
+            <li>
+                <a href="{% url 'index' %}"
+                   class="menu-link {% if request.resolver_match.url_name == 'index' %}active{% endif %}">Главная</a>
+            </li>
+            <li>
+                <a href="{% url 'catalog' %}"
+                   class="menu-link {% if request.resolver_match.url_name == 'catalog' %}active{% endif %}">Каталог</a>
+            </li>
+            <li>
+                <a href="{% url 'contacts' %}"
+                   class="menu-link {% if request.resolver_match.url_name == 'contacts' %}active{% endif %}">Контакты</a>
+            </li>
+            <li>
+                <a href="{#% url 'basket' %#}"
+                   class="menu-link {% if request.resolver_match.url_name == 'basket' %}active{% endif %}">Корзина</a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+</header>
